@@ -4,7 +4,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis } from "recharts"
 import { ArrowDown, ArrowDownRight } from "lucide-react"
 
-const data = [
+interface OrderStatusData {
+  name: string;
+  current: number;
+  last: number;
+}
+
+const data: OrderStatusData[] = [
   { name: "01", current: 30, last: 20 },
   { name: "02", current: 25, last: 35 },
   { name: "03", current: 45, last: 25 },

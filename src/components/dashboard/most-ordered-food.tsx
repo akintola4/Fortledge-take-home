@@ -3,7 +3,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Image from "next/image"
 
-const foodItems = [
+interface OrderFoodData {
+  name: string;
+  price: string;
+  image: string;
+}
+
+const foodItems: OrderFoodData[] = [
   { name: "Fresh Salad Bowl", price: "IDR 45.000", image: "/png/fresh-salad-bowl.png" },
   { name: "Chicken Noodles", price: "IDR 75.000", image: "/png/chicken-noodles.png" },
   { name: "Smoothie Fruits", price: "IDR 45.000", image: "/png/smoothie-fruits.png" },

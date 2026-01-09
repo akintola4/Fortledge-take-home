@@ -4,7 +4,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis, Tooltip, Cell } from "recharts"
 import { ArrowUp, ArrowUpRight } from "lucide-react"
 
-const data = [
+interface ChartDate {
+  name: string;
+  current: number;
+  last: number;
+}
+
+const data: ChartDate[] = [
   { name: "01", current: 65, last: 45 },
   { name: "02", current: 55, last: 35 },
   { name: "03", current: 80, last: 60 },

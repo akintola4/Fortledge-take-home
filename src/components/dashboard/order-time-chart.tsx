@@ -3,7 +3,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts"
 
-const data = [
+
+interface OrderTimeData {
+  name: string;
+  value: number;
+  color: string;
+}
+
+const data: OrderTimeData[] = [
   { name: "Afternoon", value: 40, color: "#5D5FEF" },
   { name: "Evening", value: 32, color: "#7F81FF" },
   { name: "Morning", value: 28, color: "#C6C7FF" },

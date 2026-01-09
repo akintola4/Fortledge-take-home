@@ -7,6 +7,8 @@ import { RatingBubbles } from "@/components/dashboard/rating-bubbles"
 import { MostOrderedFood } from "@/components/dashboard/most-ordered-food"
 import { OrderStatusChart } from "@/components/dashboard/order-status-chart"
 
+
+//if you confirm most of the dynmaic component are data based so we can convert the static data to dynamic data
 export default function DashboardPage() {
   return (
     <div className="flex flex-col min-h-screen">

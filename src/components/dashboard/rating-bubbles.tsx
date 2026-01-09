@@ -41,8 +41,14 @@ const LAYOUT_CONFIGS = [
   }
 ]
 
+interface RatingBubblesData {
+  title: string;
+  percentage: number;
+  color: string;
+}
+
 export function RatingBubbles() {
-  const data = [
+  const data: RatingBubblesData[] = [
     { title: "Hygiene", percentage: 85, color: "#8280E1" },
     { title: "Food Taste", percentage: 85, color: "#FCAE4F" },
     { title: "Packaging", percentage: 92, color: "#46C7E0" }
